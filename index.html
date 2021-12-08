@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee & More</title>
+    <link rel="shortcut icon" type="image/png" href="images/Coffee & More-logos_white.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="floating-menu">
+        <a href="#section1">HOME</a>
+        <a href="#section2">ABOUT</a>
+        <a href="#section3">CONTACT</a>
+    </nav>
+    <div id="fullPage">
+        <div class="section s1">
+            <h1>Coffee <span class="and">&</span> More</h1>
+            <h2>
+                <span class="lunch">LUNCH HOUR</span> 
+                <span class="is"> <br>is the</span> 
+                <br> 
+                <span class="best">BEST HOUR</span> <br>
+                <span class="day">OF THE DAY</span>
+            </h2>
+        </div>
+        <div class="section s2">
+            <h1>The Second Section</h1>
+        </div>
+        <div class="section s3">
+            <h1>The Third Section</h1>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        new fullpage('#fullPage', {
+            autoScrolling: true,
+            navigation: false,
+            anchors: ['section1', 'section2', 'section3'],
+            navigationTooltips: ['Home', 'About Us', 'Contact Us'],
+            showActiveTooltip: false,
+            responsiveWidth: 900,
+            responsiveHeight: 560,
+            touchSensitivity: true,
+            paddingTop: '3em',
+	        paddingBottom: '10px',
+        })
+    </script>
+</body>
+</html>
